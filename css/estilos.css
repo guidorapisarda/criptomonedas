@@ -1,0 +1,443 @@
+/* CSS RESET */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* Seteando la letra para usar la de Google Fonts */
+body {
+    font-family: 'Mukta', sans-serif;
+    height: 100vh;
+}
+
+/* Seteando las imagenes de fondo por página */
+.contactanos, .index {
+    background-image: url("../images/background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    position: relative;
+}
+
+.comofuncionan {
+    background-image: url("../images/funcionan.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    position: relative;
+}
+
+.monedas {
+    background-image: url("../images/monedas.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    position: relative;
+}
+
+.blockchain {
+    background-image: url("../images/domino.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    position: relative;
+}
+
+/* NAV BAR Mods*/
+
+.nav {
+    /*background-color: #f79719;*/ /* Color estatico, original */
+    background: rgb(23,25,25);
+    background: linear-gradient(164deg, rgba(247,151,25,1) 30%, rgba(52,196,226,1) 100%);
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+}
+
+.nav__logo {
+    padding-top: 9px;
+    margin-left: 20px;
+}
+
+#logo {
+    max-width: 40px;
+}
+
+.nav__titulo {
+    margin: auto;
+    max-width: 20%;
+    margin-left: 10px;
+    margin-right: 0px;
+    font-size: 20px;
+}
+
+.nav__menu {
+    list-style-type: none;
+    margin: auto;
+    max-width: 40%;
+    margin-right: 0px;
+    padding: 6px;
+}
+
+.nav__menu__item {
+    display: inline;
+    padding-right: 4px;
+    border-right: 2px solid black;
+}
+
+.nav__menu__item:last-child {
+    border: none;
+}
+
+.nav__menu__item__link {
+    text-align: center;
+    text-decoration: underline;
+    color: blue;
+}
+
+/* FOOTER BAR Mods*/
+
+.foot {
+    /*background-color: #f79719; */
+    background: rgb(247,151,25);
+    background: linear-gradient(164deg, rgba(247,151,25,1) 30%, rgba(52,196,226,1) 100%);
+    display: flex;
+    overflow: hidden;
+    justify-content: space-between;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    line-height: 1.3;
+}
+
+.footerblockchain{
+    position: relative;
+}
+
+.foot__copyright {
+    margin-left: 20px;
+}
+
+.foot__container__form {
+    margin-right: 10px;
+}
+
+.foot__followus__link {
+    color: black;
+}
+
+/* Centrando y agrandando los titulos del container central y derecho*/
+.foot__followus__titulo, .foot__container__form__title {
+    font-size: 16px;
+    text-align: center;
+}
+
+/* Haciendo que el footer sea en columnas, para agregar varios footers en el mismo.*/
+.footInColumns {
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* haciendo que el footer con los derechos de autor, redes sociales y newsletter respete el formato original*/
+.foot__banner {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+/* Moviendo hacia abajo los 3 boxes del footer*/
+.center__footer {
+    padding-top: 10px;
+}
+
+/* Editando el main de todas las páginas */
+.main {
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+/* Modificando el titulo de la hero image */
+
+.main__hero {
+    max-width: 40%;
+    margin-left: 60px;
+    margin-top: 60px;
+    line-height: 1.1;
+}
+
+.main__hero__tituloHero {
+    font-size: 100px;
+    color: black;
+    text-align: left;
+    margin-top: -40px;
+
+}
+
+/* Modificando el boton del hero image*/
+
+.main__hero__buttonHero {
+    background-color: #f79719;
+    border: none;
+    color: #f79719;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    background-color: #f79719;
+    color: black;
+    border: 4px solid black;
+    font-weight: bold;
+    font-size: 20px;
+    box-shadow: 3px 3px;
+}
+
+.main__hero__buttonHero:hover {
+    background-color: black;
+    color: #f79719;
+    border: 4px solid #f79719;
+    box-shadow: 3px 3px;
+    transform: scale(1.15,1.3)
+}
+
+/* Creando las cartas y asignandole estilos */
+
+.cardContainer__titulo {
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.cardContainer {
+    padding: 3px 16px 10px 16px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background: gray;
+    border: 4px solid black;
+}
+
+.cardContainer__card {
+    /* Add shadows to create the "card" effect */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    display: inline-block;
+    background-color: white;
+    border: 2px solid black;
+}
+
+.cardContainer__card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.cardContainer__card__titulo {
+    text-align: center;
+}
+.cardContainer__card__valor{
+	text-align: center;
+}
+
+/* Modificaciones para armado de story telling */
+
+/* Centrando el título y cambiando el tamaño e interlineado */
+.main__title {
+    text-align: center;
+    font-size: 40px;
+    line-height: 1.1;
+    text-decoration: underline; 
+}
+
+/* Editando los estilos del Formulario de contacto */
+
+.form {
+    background: #f1f1f1;
+    width: 470px;
+    margin: 0 auto;
+    padding-left: 50px;
+    padding-top: 20px;
+}
+
+.yaRegistrado {
+    display: inline;
+}
+
+.form label {
+    font-size: 12px;
+    margin: 0px 0px 10px 0;
+    line-height: 14px;
+}
+
+.form input[type="text"] {
+    width: 400px;
+}
+
+.form input[type="email"] {
+    width: 400px;
+}
+
+.form input:focus, textarea:focus {
+    border: 1px solid #ff5400;
+    background-color: rgba(255, 255, 255, 1);
+}
+
+.form select {
+    border: 0px solid #FFF;
+    color: #555;
+    margin: 0;
+    overflow: hidden;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.form button {
+    background: black;
+    display: inline-block;
+    padding: 5px 10px 6px;
+    color: white;
+    font-weight: bold;
+    line-height: 1;
+    border-radius: 5px;
+    box-shadow: 0 1px 3px #999;
+    text-shadow: 0 -1px 1px #222;
+    position: relative;
+    font-size: 14px;
+}
+
+.form button:hover {
+    background-color: #f79719;
+}
+
+/* Grids en pagina de Monedas */
+.gridCards-container {
+  margin: 0 30%;
+  padding-top: 30px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 60px 20px;
+  grid-template-areas:
+    "gridCards-element-dogecoin gridCards-element-bitcoin gridCards-element-ethereum"
+    "gridCards-element-cardano gridCards-element-tether gridCards-element-xrp"
+    "gridCards-element-usdcoin gridCards-element-binancecoin gridCards-element-litecoin";
+}
+.gridCards-element-dogecoin { grid-area: gridCards-element-dogecoin; }
+.gridCards-element-bitcoin { grid-area: gridCards-element-dogecoin; }
+.gridCards-element-ethereum { grid-area: gridCards-element-ethereum; }
+.gridCards-element-cardano { grid-area: gridCards-element-cardano; }
+.gridCards-element-tether { grid-area: gridCards-element-tether; }
+.gridCards-element-xrp { grid-area: gridCards-element-xrp; }
+.gridCards-element-usdcoin { grid-area: gridCards-element-usdcoin; }
+.gridCards-element-binancecoin { grid-area: gridCards-element-binancecoin; }
+.gridCards-element-litecoin { grid-area: gridCards-element-litecoin; }
+
+.boxContainer-currency{
+	border: solid 1px;
+	box-shadow: 0 8px 8px 0 rgba(0,0,0,0.2);
+	transition: 0.3s;
+
+}
+
+.boxContainer-currency:hover{
+	box-shadow: 0 8px 16px 0 #f79719;
+	text-decoration: underline;
+}
+
+/* Modal sin JavaScript */
+.modal-contenido{
+  background-color: #f79719;
+  width:30em;
+  /*padding: 10px 20px;*/
+  margin: 20% auto;
+  position: relative;
+}
+
+.modal{  
+  opacity: 0;
+  pointer-events: none;
+  background-color: rgba(0,0,0,.8);
+  position:fixed;
+  top:0;
+  right:0;
+  bottom:0;
+  left:0;
+  
+}
+
+/* hago que al hacer click en cualquier tarjeta, se abra el modal correspondiente. */
+#modalDoge:target, #modalBitcoin:target, 
+#modalEthereum:target, #modalCardano:target, 
+#modalTether:target, #modalXrp:target, 
+#modalUsdCoin:target, #modalBinance:target, 
+#modalLite:target{
+  opacity:1;
+  pointer-events:auto;
+  transition: all 1s;
+}
+
+/* Remuevo la apariencia de los links dentro de cada tarjeta. */
+a[href*="modal"]{
+  text-decoration: none;
+  color:black;
+}
+
+/* Hago que el boton de cerrar flote y se posicione a la derecha y afuera del contenedor. */
+.modal-contenido a{
+    text-decoration: none;
+    color:black;
+    float:right;
+    margin-top: -20px;
+    margin-right: -10px; 
+}
+
+.modal-contenido h6{
+    text-align: center;
+    font-size: 16px;
+    text-decoration: underline;
+    padding: 0px 10px;
+}
+
+.modal-contenido p{
+    padding: 0px 10px;
+}
+
+.coinlogo-container{
+    display:flex;
+    padding: 0px 10px;
+}
+
+.coinlogo{
+    width: 20px;
+    height: 20px;
+    padding-top: 2px;
+    padding-left: 3px;
+}
+
+/* Edicion de las secciones con mas texto */
+.main__section{
+    margin: 0 15%;
+}
+
+.main__section__article__titulo{
+    font-size: 30px;
+}
+
+.main__section__article__texto{
+    font-size: 18px;
+    padding-left: 45px;
+}
+
+.main__section__article__texto li{
+    margin-left: 45px;
+}
+
+.foot__cards section article{
+    width: 110px;
+}

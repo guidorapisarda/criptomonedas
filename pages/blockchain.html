@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Mukta:wght@600&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="../css/estilos.css">
+    <link rel="shortcut icon" href="../images/logo.ico">
+	<title>Criptomonedas</title>
+</head>
+<body class="blockchain">
+	<header>
+
+		<nav class="nav">
+
+			<div class="nav__logo"><a class="nav__logo__link" href="../index.html"><img src="../images/logo.png" id="logo" alt="bitcoinlogo"></a></div>
+
+			<div class="nav__titulo"><h4>Criptomonedas</h4></div>
+
+			<ul class="nav__menu">
+				<li class="nav__menu__item"><a class="nav__menu__item__link" href="../index.html">Inicio</a></li>
+				<li class="nav__menu__item"><a class="nav__menu__item__link" href="./monedas.html">Monedas</a></li>
+				<li class="nav__menu__item"><a class="nav__menu__item__link" href="./comofuncionan.html">Como funcionan</a></li>
+				<li class="nav__menu__item"><a class="nav__menu__item__link" href="./blockchain.html">BlockChain</a></li>
+				<li class="nav__menu__item"><a class="nav__menu__item__link" href="./contactanos.html">Contactanos</a></li>
+			</ul>
+		</nav>
+	</header>
+	<main class="main">
+			<section>
+				<article><h1 class="main__title">Blockchain</h1></article>
+			</section>
+			<section class="main__section">
+				<article class="main__section__article">
+					<dl>
+						<dt class="main__section__article__titulo">Que es BlockChain?</dt>
+						<dd class="main__section__article__texto">
+							<p>
+								Una cadena de bloques,​ conocida en inglés como blockchain, es una estructura de datos cuya información se agrupa en conjuntos (bloques) a los que se les añade metainformaciones relativas a otro bloque de la cadena anterior en una línea temporal. De esta forma, gracias a técnicas criptográficas, la información contenida en un bloque solo puede ser repudiada o editada modificando todos los bloques posteriores. Esta propiedad permite su aplicación en un entorno distribuido de manera que la estructura de datos blockchain puede ejercer de base de datos pública no relacional que contenga un histórico irrefutable de información.
+							</p>
+						</dd>
+					</dl>
+				</article>
+				<article class="main__section__article">
+					<dl>
+						<dt class="main__section__article__titulo">Que uso tiene?</dt>
+						<dd class="main__section__article__texto">
+							<p>En la práctica ha permitido, gracias a la criptografía asimétrica y las funciones de resumen o hash, la implementación de un registro contable (ledger) distribuido que permite soportar y garantizar la seguridad de dinero digital.​ Siguiendo un protocolo apropiado para todas las operaciones efectuadas sobre la blockchain, es posible alcanzar un consenso sobre la integridad de sus datos por parte de todos los participantes de la red sin necesidad de recurrir a una entidad de confianza que centralice la información. Por ello se considera una tecnología en la que la "verdad" (estado confiable del sistema) es construida, alcanzada y fortalecida por los propios miembros; incluso en un entorno en el que exista una minoría de nodos en la red con comportamiento malicioso dado que, en teoría, para comprometer los datos, un atacante requeriría de una mayor potencia de cómputo y presencia en la red que el resultante de la suma de todos los restantes nodos combinados.
+							Por las razones anteriores, la tecnología blockchain es especialmente adecuada para escenarios en los que se requiera almacenar de forma creciente datos ordenados en el tiempo, sin posibilidad de modificación ni revisión y cuya confianza pretenda ser distribuida en lugar de residir en una entidad certificadora. Este enfoque tiene diferentes aspectos:
+							<ul>
+								<li>Almacenamiento de datos: se logra mediante la replicación de la información de la cadena de bloques</li>
+								<li>Transmisión de datos: se logra mediante redes de pares.</li>
+								<li>Confirmación de datos: se logra mediante un proceso de consenso entre los nodos participantes. El tipo de algoritmo de consenso más utilizado es el de prueba de trabajo en el que hay un proceso abierto competitivo y transparente de validación de las nuevas entradas llamada minería.</li>
+							</ul>
+							</p>
+						</dd>
+					</dl>
+				</article>
+				<article class="main__section__article">
+					<dl>
+						<dt class="main__section__article__titulo">Como surgio?</dt>
+						<dd class="main__section__article__texto">
+							<p>El concepto de cadena de bloque fue aplicado por primera vez en 2009 como parte de Bitcoin.
+							</p>
+						</dd>
+					</dl>
+				</article>
+				<article class="main__section__article">
+					<dl>
+						<dt class="main__section__article__titulo">Que informacion contiene?</dt>
+						<dd class="main__section__article__texto">
+							<p>Los datos almacenados en la cadena de bloques normalmente suelen ser transacciones (p. ej. financieras) por eso es frecuente llamar a los datos transacciones. Sin embargo, no es necesario que lo sean. Realmente podríamos considerar que lo que se registran son cambios atómicos del estado del sistema. Por ejemplo una cadena de bloques puede ser usada para estampillar documentos y asegurarlos frente a alteraciones.</p>
+						</dd>
+					</dl>
+				</article>
+				<article class="main__article">
+					<dl>
+						<dt class="main__section__article__titulo">Que aplicaciones tiene?</dt>
+						<dd class="main__section__article__texto">
+							<p>El concepto de cadena de bloques se usa en los siguientes campos:
+								<ul>
+									<li>En el campo de las criptomonedas la cadena de bloques se usa como notario público no modificable de todo el sistema de transacciones a fin de evitar el problema de que una moneda se pueda gastar dos veces. Por ejemplo es usada en Bitcoin, Ethereum, Dogecoin y Litecoin, aunque cada una con sus particularidades.​</li>
+									<li>En el campo de las bases de datos de registro de nombres la cadena de bloques se usa para tener un sistema de notario de registro de nombres de tal forma que un nombre solo pueda ser utilizado para identificar el objeto que lo tiene efectivamente registrado. Es una alternativa al sistema tradicional de DNS. Por ejemplo es usada en Namecoin.</li>
+									<li>Uso como notario distribuido en distintos tipos de transacciones haciéndolas más seguras, baratas y rastreables. Por ejemplo se usa para sistemas de pago, transacciones bancarias (dificultando el lavado de dinero), envío de remesas, préstamos y en los sistemas de gestión de activos digitales puede ser usado con distintos propósitos.</li>
+									<li>Es utilizado como base de plataformas descentralizadas que permiten soportar la creación de acuerdos de contrato inteligente entre pares. El objetivo de estas plataformas es permitir a una red de pares administrar sus propios contratos inteligentes creados por los usuarios. Primero se escribe un contrato mediante un código y se sube a la cadena de bloques mediante una transacción. Una vez en la cadena de bloques el contrato tiene una dirección desde la cual se puede interactuar con él. Ejemplos de este tipo de plataformas son Ethereum y Ripple.</li>
+									<li>Es utilizado en la contratación pública​, donde puede ayudar a incrementar la transparencia en las licitaciones.</li>
+									<li>Implementación del componente criptográfico llamado Bulletin Boards usado, entre otros, en sistemas de voto electrónico, creación de registros, subastas y foros de discusión.</li>
+								</ul>
+							</p>
+						</dd>
+					</dl>
+				</article>
+			</section>
+	</main>
+	<!-- START FIRST FOOTER -->
+	<footer class="foot footerblockchain">
+		<!-- START COPYRIGHT FOOTER -->
+		<div class="foot__copyright center__footer">
+			<p>Copyright - Derechos de autor:<br>
+				Guido Rapisarda<br>
+				<a class="foot__copyright__link" href="mailto:consultas@criptoinfo.com.ar">consultas@criptoinfo.com.ar</a>
+			</p>
+		</div>
+		<!-- END COPYRIGHT FOOTER -->
+
+		<!-- START FOLLOW US FOOTER -->
+		<div class="foot__followus center__footer">
+			<h6 class="foot__followus__titulo">Seguinos!</h6>
+			<a class="foot__followus__link" href="#"><i class="fab fa-instagram fa-3x"></i></a>
+			<a class="foot__followus__link" href="#"><i class="fab fa-youtube fa-3x"></i></a>
+			<a class="foot__followus__link" href="#"><i class="fab fa-spotify fa-3x"></i></a>
+		</div>
+		<!-- END FOLLOW US FOOTER -->
+
+		<!-- START SUBSCRIBE FOOTER -->
+		<form  method="GET" class="foot__container__form center__footer" action="#">
+			<h6 class="foot__container__form__title" >Subscribite a nuestro newsletter!</h6>
+			<input type="mail" placeholder="correo@hotmail.com">
+			<button type="submit">Subscribirme</button>
+		</form>
+		<!-- START SUBSCRIBE FOOTER -->
+	</footer>
+	<!-- END SECOND FOOTER -->
+</body>
+</html>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Importing Mukta Font from Google Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Mukta:wght@600&display=swap" rel="stylesheet">
+	<!-- END of importing font -->
+	<!-- START Importing Font Awesome -->
+	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+  	<!-- END Importing Font Awesome -->
+  	<!-- Importing CSS file -->
+    <link rel="stylesheet" href="./css/estilos.css">
+    <link rel="shortcut icon" href="./images/logo.ico">
+	<title>Criptomonedas</title>
+</head>
+<body class="index">
+	<header>
+		<!-- START NAV BAR-->
+		<nav class="nav">
+			<!-- START NAV BAR LOGO-->
+			<div class="nav__logo"><a class="nav__logo__link" href="./index.html"><img src="./images/logo.png" id="logo" alt="bitcoinlogo"></a></div>
+			<!-- END NAV BAR LOGO-->
+
+			<!-- START NAV BAR TITLE -->
+			<div class="nav__titulo"><h4>Criptomonedas</h4></div>
+			<!-- END NAV BAR TITLE -->
+
+			<!-- START NAV BAR MENU -->
+			<ul class="nav__menu">
+				<li class="nav__menu__item"><a class="nav__menu__item__link" href="./index.html">Inicio</a></li>
+				<li class="nav__menu__item"><a class="nav__menu__item__link" href="./pages/monedas.html">Monedas</a></li>
+				<li class="nav__menu__item"><a class="nav__menu__item__link" href="./pages/comofuncionan.html">Como funcionan</a></li>
+				<li class="nav__menu__item"><a class="nav__menu__item__link" href="./pages/blockchain.html">BlockChain</a></li>
+				<li class="nav__menu__item"><a class="nav__menu__item__link" href="./pages/contactanos.html">Contactanos</a></li>
+			</ul>
+			<!-- END NAV BAR MENU -->
+		</nav>
+		<!-- END NAV BAR-->
+	</header>
+	<main class="main">
+		<section class="main__hero">
+			<h1 class="main__hero__tituloHero">Iniciate en el mundo de las cripto!</h1>
+			<a href="./pages/comofuncionan.html"><button class="main__hero__buttonHero">Comenzar</button></a>
+		</section>
+		
+	</main>
+	<!-- START FIRST FOOTER -->
+	<footer class="foot footInColumns">
+		<div class="foot__cards">
+			<section class="cardContainer" id="cardContainer">
+				<h3 class="cardContainer__titulo">Cotizacion de las monedas</h3>
+				<article class="cardContainer__card boxContainer-currency">
+					<h5 class="cardContainer__card__titulo">Dogecoin</h5>
+					<div class="cardContainer__card__valor">U$S 0.05461</div>
+				</article>
+				<article class="cardContainer__card boxContainer-currency">
+					<h5 class="cardContainer__card__titulo">Ethereum</h5>
+					<div class="cardContainer__card__valor">U$S 1,710.23</div>
+				</article>
+				<article class="cardContainer__card boxContainer-currency">
+					<h5 class="cardContainer__card__titulo">Bitcoin</h5>
+					<div class="cardContainer__card__valor">U$S 56,084.37</div>
+				</article>
+				<article class="cardContainer__card boxContainer-currency">
+					<h5 class="cardContainer__card__titulo">Cardano</h5>
+					<div class="cardContainer__card__valor">U$S 1.18</div>
+				</article>
+				<article class="cardContainer__card boxContainer-currency">
+					<h5 class="cardContainer__card__titulo">Tether</h5>
+					<div class="cardContainer__card__valor">U$S 1.00</div>
+				</article>
+			</section>
+		</div>
+		<!-- START COPYRIGHT FOOTER -->
+		<div class="foot__banner">
+			<div class="foot__copyright center__footer">
+				<p>Copyright - Derechos de autor:<br>
+					Guido Rapisarda<br>
+					<a class="foot__copyright__link" href="mailto:consultas@criptoinfo.com.ar">consultas@criptoinfo.com.ar</a>
+				</p>
+			</div>
+			<!-- END COPYRIGHT FOOTER -->
+
+			<!-- START FOLLOW US FOOTER -->
+			<div class="foot__followus center__footer">
+				<h6 class="foot__followus__titulo">Seguinos!</h6>
+				<a class="foot__followus__link" href="#"><i class="fab fa-instagram fa-3x"></i></a>
+				<a class="foot__followus__link" href="#"><i class="fab fa-youtube fa-3x"></i></a>
+				<a class="foot__followus__link" href="#"><i class="fab fa-spotify fa-3x"></i></a>
+			</div>
+			<!-- END FOLLOW US FOOTER -->
+
+			<!-- START SUBSCRIBE FOOTER -->
+			<form  method="GET" class="foot__container__form center__footer" action="#">
+				<h6 class="foot__container__form__title" >Subscribite a nuestro newsletter!</h6>
+				<input type="mail" placeholder="correo@hotmail.com">
+				<button type="submit">Subscribirme</button>
+			</form>
+			<!-- START SUBSCRIBE FOOTER -->
+		</div>
+	</footer>
+	<!-- END SECOND FOOTER -->
+</body>
+</html>
