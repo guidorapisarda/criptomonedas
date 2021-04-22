@@ -49,7 +49,6 @@ body {
 /* NAV BAR Mods*/
 
 .nav {
-    /*background-color: #f79719;*/ /* Color estatico, original */
     background: rgb(23,25,25);
     background: linear-gradient(164deg, rgba(247,151,25,1) 30%, rgba(52,196,226,1) 100%);
     display: flex;
