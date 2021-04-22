@@ -9,6 +9,9 @@ body {
     font-family: 'Mukta', sans-serif;
     height: 100vh;
 }
+.navbar-toggler{
+    margin-right: 0;
+}
 
 /* Seteando las imagenes de fondo por página */
 .contactanos, .index {
@@ -52,6 +55,13 @@ body {
     display: flex;
     overflow: hidden;
     width: 100%;
+}
+
+.bg-orange{
+    background: rgba(247,151,25,1);
+}
+.navbar {
+    padding: 0;
 }
 
 .nav__logo {
@@ -161,6 +171,18 @@ body {
 
 /* Modificando el titulo de la hero image */
 
+.heroPosition{
+    margin-left: 5vw;
+    margin-top: 10vh;
+    line-height: 1.1;
+}
+
+.heroSize{
+    font-size: 3em;
+    color: black;
+    text-align: left;
+}
+
 .main__hero {
     max-width: 40%;
     margin-left: 60px;
@@ -178,32 +200,16 @@ body {
 
 /* Modificando el boton del hero image*/
 
-.main__hero__buttonHero {
+.btn-primary{
     background-color: #f79719;
-    border: none;
-    color: #f79719;
-    padding: 16px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    transition-duration: 0.4s;
-    cursor: pointer;
-    background-color: #f79719;
-    color: black;
-    border: 4px solid black;
-    font-weight: bold;
-    font-size: 20px;
-    box-shadow: 3px 3px;
+    border-color: black;
+    color:black;
 }
 
-.main__hero__buttonHero:hover {
+.btn-primary:hover{
     background-color: black;
     color: #f79719;
-    border: 4px solid #f79719;
-    box-shadow: 3px 3px;
-    transform: scale(1.15,1.3)
+    border-color: #f79719;
 }
 
 /* Creando las cartas y asignandole estilos */
