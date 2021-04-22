@@ -51,24 +51,252 @@
     </header>
     <main class="main">
         <h1 class="main__title">Listado de criptomonedas</h1>
-        <section class="gridCards-container">
-            <article class="gridCards-element-dogecoin boxContainer-currency">
-                <a href="#modalDoge">
-                    <h5 class="cardContainer__card__titulo">Dogecoin</h5>
-                    <div class="cardContainer__card__valor">U$S 0.05461</div>
-                    <div id="modalDoge" class="modal">
-                        <div class="modal-contenido">
-                            <a href="#">X</a>
-                            <h6>Dogecoin</h6>
-                            <div class="coinlogo-container">
-                        		<label for="coinlogo">Logo:</label><img class="coinlogo" src="https://cryptologos.cc/logos/dogecoin-doge-logo.png?v=002" alt="Litecoin logo">
-                        	</div>
-                            <p>El Dogecoin es una criptodivisa derivada de Litecoin​ que usa como mascota un perro Shiba Inu del meme de Internet Doge.
-                                La criptomoneda Dogecoin fue creada por el programador y antiguo ingeniero de IBM Billy Markus, natural de Portland, Oregon, quien originalmente intentaba juguetear con una criptodivisa ya existente llamada "Bells", basada en el Animal Crossing de Nintendo, con la esperanza de alcanzar una base de usuarios más amplia que la de los inversores que crearon el Bitcoin, y algo que no estuviera involucrado con la controvertida historia detrás de Bitcoin (concretamente su asociación con el mercado negro Silk Road).​</p>
+        <div class="container">
+            <div class="row">
+                <div class="row row-cols-1 row-cols-md-3 g-4 col-6 mx-auto">
+                    <button class="btn" data-bs-toggle="modal" data-bs-target="#dogecoinModal">
+                        <div class="col">
+                            <div class="card bg-secondary">
+                                <div class="card-body">
+                                    <h5 class="card-title">Dogecoin</h5>
+                                    <p class="card-text">U$S 0.05461</p>
+                                </div>
+                            </div>
+                        </div>
+                    </button>
+                    <div class="modal fade" id="dogecoinModal" tabindex="-1" aria-labelledby="dogecoinModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="dogecoinModalLabel">Dogecoin</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <p>El Dogecoin es una criptodivisa derivada de Litecoin​ que usa como mascota un perro Shiba Inu del meme de Internet Doge.
+                                        La criptomoneda Dogecoin fue creada por el programador y antiguo ingeniero de IBM Billy Markus, natural de Portland, Oregon, quien originalmente intentaba juguetear con una criptodivisa ya existente llamada "Bells", basada en el Animal Crossing de Nintendo, con la esperanza de alcanzar una base de usuarios más amplia que la de los inversores que crearon el Bitcoin, y algo que no estuviera involucrado con la controvertida historia detrás de Bitcoin (concretamente su asociación con el mercado negro Silk Road).​</p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </a>
-            </article>
+                    <button class="btn" data-bs-toggle="modal" data-bs-target="#bitcoinModal">
+                        <div class="col">
+                            <div class="card bg-secondary">
+                                <div class="card-body">
+                                    <h5 class="card-title">Bitcoin</h5>
+                                    <p class="card-text">U$S 56,084.37</p>
+                                </div>
+                            </div>
+                        </div>
+                    </button>
+                    <div class="modal fade" id="bitcoinModal" tabindex="-1" aria-labelledby="bitcoinModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="bitcoinModalLabel">Bitcoin</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <p>Fue concebida en 2008​ por una entidad conocida bajo el seudónimo de Satoshi Nakamoto, cuya identidad concreta se desconoce.​ Satoshi trabajó en el código fuente de la aplicación de referencia​ junto a otros desarrolladores voluntarios​ hasta diciembre de 2010, momento en el que decidió concluir su actividad pública.
+                                Su unidad de cuenta tradicional se denomina bitcóin (en plural bitcoines) y se clasifica como moneda digital. nota 1​ Sirve para contabilizar y transferir valor,​ y cada bitcóin se compone de 100 millones de satoshis, que es la unidad de cuenta mínima.</p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="btn" data-bs-toggle="modal" data-bs-target="#ethereumModal">
+                        <div class="col">
+                            <div class="card bg-secondary">
+                                <div class="card-body">
+                                    <h5 class="card-title">Ethereum</h5>
+                                    <p class="card-text">U$S 1,710.23</p>
+                                </div>
+                            </div>
+                        </div>
+                    </button>
+                    <div class="modal fade" id="ethereumModal" tabindex="-1" aria-labelledby="ethereumModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="ethereumModalLabel">Ethereum</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <p>Ethereum es una plataforma open source, que sirve para programar contratos inteligentes. La plataforma es descentralizada a diferencia de otras cadenas de bloques. Es programable, lo que significa que los desarrolladores pueden usarlo para crear nuevos tipos de aplicaciones descentralizadas.</p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="btn" data-bs-toggle="modal" data-bs-target="#cardanoModal">
+                        <div class="col">
+                            <div class="card bg-secondary">
+                                <div class="card-body">
+                                    <h5 class="card-title">Cardano</h5>
+                                    <p class="card-text">U$S 1.18</p>
+                                </div>
+                            </div>
+                        </div>
+                    </button>
+                    <div class="modal fade" id="cardanoModal" tabindex="-1" aria-labelledby="cardanoModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="cardanoModalLabel">Cardano</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <p>Cardano es una cadena de bloques de código abierto, así como una plataforma para ejecutar contratos inteligentes. El desarrollo del proyecto está supervisado por la Fundación Cardano, creada por el matemático y cocreador de Ethereum Charles Hoskinson sede en Zug, Suiza. La plataforma comenzó su desarrollo en 2015 y fue lanzada en 2017 por Charles Hoskinson (en) , cofundador de Ethereum y BitShares. Según Hoskinson, abandonó Ethereum después de una discusión sobre mantener Ethereum sin fines de lucro. Después de su partida, cofundó IOHK, una empresa de ingeniería blockchain, cuya actividad principal es el desarrollo de Cardano, junto con la Fundación Cardano y Emurgo. La plataforma lleva el nombre de Girolamo Cardano y la criptomoneda en honor a Ada Lovelace .</p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Aca -->
+                    <button class="btn" data-bs-toggle="modal" data-bs-target="#tetherModal">
+                        <div class="col">
+                            <div class="card bg-secondary">
+                                <div class="card-body">
+                                    <h5 class="card-title">Tether</h5>
+                                    <p class="card-text">U$S 1.00</p>
+                                </div>
+                            </div>
+                        </div>
+                    </button>
+                    <div class="modal fade" id="tetherModal" tabindex="-1" aria-labelledby="tetherModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="tetherModalLabel">Tether</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <p>Tether es una criptomoneda controvertida con tokens emitidos por Tether Limited. Anteriormente afirmó falsamente que cada token estaba respaldado por un dólar estadounidense, pero el 14 de marzo de 2019 cambió el respaldo para incluir préstamos a empresas afiliadas.​</p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="btn" data-bs-toggle="modal" data-bs-target="#xrpModal">
+                        <div class="col">
+                            <div class="card bg-secondary">
+                                <div class="card-body">
+                                    <h5 class="card-title">XRP</h5>
+                                    <p class="card-text">U$S 0.5574</p>
+                                </div>
+                            </div>
+                        </div>
+                    </button>
+                    <div class="modal fade" id="xrpModal" tabindex="-1" aria-labelledby="xrpModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="xrpModalLabel">Dogecoin</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <p>XRP Ledger o simplemente XRP (antes llamado Ripple) 1​2​3​ es un proyecto de software libre y un protocolo de pagos que persigue el desarrollo de un sistema de crédito basado en el paradigma peer-to-peer. Cada nodo de la red funciona como un sistema de cambio local, de manera que la totalidad del sistema forma un banco mutualista descentralizado. Algunos consideran que implementada hasta sus últimas consecuencias esta red constituiría un servicio de red social descentralizado basado en el honor y en la confianza entre sus participantes a nivel global (de esta manera, su capital financiero se sustenta en el capital social). Una versión reducida de la red consistiría en una extensión del sistema bancario tradicional en el que existirían rutas de pago alternativas que no dependerían de los bancos centrales.</p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="btn" data-bs-toggle="modal" data-bs-target="#usdModal">
+                        <div class="col">
+                            <div class="card bg-secondary">
+                                <div class="card-body">
+                                    <h5 class="card-title">USD Coin</h5>
+                                    <p class="card-text">U$S 1.00</p>
+                                </div>
+                            </div>
+                        </div>
+                    </button>
+                    <div class="modal fade" id="usdModal" tabindex="-1" aria-labelledby="usdModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="usdModalLabel">Dogecoin</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <p>USD Coin (conocida por su símbolo USDC) es una stablecoin que está vinculada al dólar estadounidense en una base de 1:1. Todas las unidades de esta criptomoneda en circulación están respaldadas por U$S 1 que se mantienen en reserva, en una combinación de efectivo y bonos del Tesoro de Estados Unidos a corto plazo.</p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="btn" data-bs-toggle="modal" data-bs-target="#binanceModal">
+                        <div class="col">
+                            <div class="card bg-secondary">
+                                <div class="card-body">
+                                    <h5 class="card-title">Binance Coin</h5>
+                                    <p class="card-text">U$S 264.28</p>
+                                </div>
+                            </div>
+                        </div>
+                    </button>
+                    <div class="modal fade" id="binanceModal" tabindex="-1" aria-labelledby="binanceModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="binanceModalLabel">Binance Coin</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <p>Binance Coin es la criptomoneda oficial del criptoexchange o casa de cambio Binance, cuyo nombre es un acrónimo compuesto de las palabras “binary” y “finance”. 1​ La criptomoneda cuenta con el símbolo BNB y se basa en la cadena de bloques de Ethereum y, de forma similar a Ether.
+                                La moneda nació básicamente para soportar transacciones dentro de la propia plataforma de Binance por lo que no se pueden adquirir en otras plataformas.</p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="btn" data-bs-toggle="modal" data-bs-target="#liteCoinModal">
+                        <div class="col">
+                            <div class="card bg-secondary">
+                                <div class="card-body">
+                                    <h5 class="card-title">Lite Coin</h5>
+                                    <p class="card-text">U$S 264.28</p>
+                                </div>
+                            </div>
+                        </div>
+                    </button>
+                    <div class="modal fade" id="liteCoinModal" tabindex="-1" aria-labelledby="liteCoinModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="liteCoinModalLabel">Lite Coin</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <p>Litecoin (LTC) es una criptomoneda y proyecto de software de código abierto publicado bajo la licencia MIT inspirado y prácticamente idéntico en su aspecto técnico a Bitcoin (BTC). Su creación y transferencia se basa en un protocolo criptográfico no administrado por ninguna autoridad central y sustentado en el consenso de una red peer-to-peer.
+                                Litecoin fue pensada para ser una alternativa a Bitcoin para transferencias de bajo valor, y cada litecoin es fraccionado en 100.000.000 unidades más pequeñas, definidas por ocho decimales.</p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--
             <article class="gridCards-element-Bitcoin boxContainer-currency">
                 <a href="#modalBitcoin">
                     <h5 class="cardContainer__card__titulo">Bitcoin</h5>
@@ -78,8 +306,8 @@
                             <a href="#">X</a>
                             <h6>Bitcoin</h6>
                             <div class="coinlogo-container">
-                        		<label for="coinlogo">Logo:</label><img class="coinlogo" src="https://cryptologos.cc/logos/bitcoin-btc-logo.png?v=002" alt="Litecoin logo">
-                        	</div>
+                                <label for="coinlogo">Logo:</label><img class="coinlogo" src="https://cryptologos.cc/logos/bitcoin-btc-logo.png?v=002" alt="Litecoin logo">
+                            </div>
                             <p>Fue concebida en 2008​ por una entidad conocida bajo el seudónimo de Satoshi Nakamoto, cuya identidad concreta se desconoce.​ Satoshi trabajó en el código fuente de la aplicación de referencia​ junto a otros desarrolladores voluntarios​ hasta diciembre de 2010, momento en el que decidió concluir su actividad pública.
                                 Su unidad de cuenta tradicional se denomina bitcóin (en plural bitcoines) y se clasifica como moneda digital. nota 1​ Sirve para contabilizar y transferir valor,​ y cada bitcóin se compone de 100 millones de satoshis, que es la unidad de cuenta mínima.</p>
                         </div>
@@ -96,8 +324,8 @@
                             <a href="#">X</a>
                             <h6>Ethereum</h6>
                             <div class="coinlogo-container">
-                        		<label for="coinlogo">Logo:</label><img class="coinlogo" src="https://cryptologos.cc/logos/ethereum-eth-logo.png?v=002" alt="Litecoin logo">
-                        	</div>
+                                <label for="coinlogo">Logo:</label><img class="coinlogo" src="https://cryptologos.cc/logos/ethereum-eth-logo.png?v=002" alt="Litecoin logo">
+                            </div>
                             <p>Ethereum es una plataforma open source, que sirve para programar contratos inteligentes. La plataforma es descentralizada a diferencia de otras cadenas de bloques. Es programable, lo que significa que los desarrolladores pueden usarlo para crear nuevos tipos de aplicaciones descentralizadas.</p>
                         </div>
                     </div>
@@ -112,8 +340,8 @@
                             <a href="#">X</a>
                             <h6>Cardano</h6>
                             <div class="coinlogo-container">
-                        		<label for="coinlogo">Logo:</label><img class="coinlogo" src="https://cryptologos.cc/logos/cardano-ada-logo.png?v=002" alt="Litecoin logo">
-                        	</div>
+                                <label for="coinlogo">Logo:</label><img class="coinlogo" src="https://cryptologos.cc/logos/cardano-ada-logo.png?v=002" alt="Litecoin logo">
+                            </div>
                             <p>Cardano es una cadena de bloques de código abierto, así como una plataforma para ejecutar contratos inteligentes. El desarrollo del proyecto está supervisado por la Fundación Cardano, creada por el matemático y cocreador de Ethereum Charles Hoskinson sede en Zug, Suiza. La plataforma comenzó su desarrollo en 2015 y fue lanzada en 2017 por Charles Hoskinson (en) , cofundador de Ethereum y BitShares. Según Hoskinson, abandonó Ethereum después de una discusión sobre mantener Ethereum sin fines de lucro. Después de su partida, cofundó IOHK, una empresa de ingeniería blockchain, cuya actividad principal es el desarrollo de Cardano, junto con la Fundación Cardano y Emurgo. La plataforma lleva el nombre de Girolamo Cardano y la criptomoneda en honor a Ada Lovelace .</p>
                         </div>
                     </div>
@@ -128,8 +356,8 @@
                             <a href="#">X</a>
                             <h6>Tether</h6>
                             <div class="coinlogo-container">
-                        		<label for="coinlogo">Logo:</label><img class="coinlogo" src="https://cryptologos.cc/logos/tether-usdt-logo.png?v=002" alt="Litecoin logo">
-                        	</div>
+                                <label for="coinlogo">Logo:</label><img class="coinlogo" src="https://cryptologos.cc/logos/tether-usdt-logo.png?v=002" alt="Litecoin logo">
+                            </div>
                             <p>Tether es una criptomoneda controvertida con tokens emitidos por Tether Limited. Anteriormente afirmó falsamente que cada token estaba respaldado por un dólar estadounidense, pero el 14 de marzo de 2019 cambió el respaldo para incluir préstamos a empresas afiliadas</p>
                         </div>
                     </div>
@@ -144,8 +372,8 @@
                             <a href="#">X</a>
                             <h6>XRP</h6>
                             <div class="coinlogo-container">
-                        		<label for="coinlogo">Logo:</label><img class="coinlogo" src="https://cryptologos.cc/logos/xrp-xrp-logo.png?v=002" alt="Litecoin logo">
-                        	</div>
+                                <label for="coinlogo">Logo:</label><img class="coinlogo" src="https://cryptologos.cc/logos/xrp-xrp-logo.png?v=002" alt="Litecoin logo">
+                            </div>
                             <p>XRP Ledger o simplemente XRP (antes llamado Ripple) 1​2​3​ es un proyecto de software libre y un protocolo de pagos que persigue el desarrollo de un sistema de crédito basado en el paradigma peer-to-peer. Cada nodo de la red funciona como un sistema de cambio local, de manera que la totalidad del sistema forma un banco mutualista descentralizado. Algunos consideran que implementada hasta sus últimas consecuencias esta red constituiría un servicio de red social descentralizado basado en el honor y en la confianza entre sus participantes a nivel global (de esta manera, su capital financiero se sustenta en el capital social). Una versión reducida de la red consistiría en una extensión del sistema bancario tradicional en el que existirían rutas de pago alternativas que no dependerían de los bancos centrales.</p>
                         </div>
                     </div>
@@ -160,8 +388,8 @@
                             <a href="#">X</a>
                             <h6>USD Coin</h6>
                             <div class="coinlogo-container">
-                        		<label for="coinlogo">Logo:</label><img class="coinlogo" src="https://cryptologos.cc/logos/usd-coin-usdc-logo.png?v=002" alt="Litecoin logo">
-                        	</div>
+                                <label for="coinlogo">Logo:</label><img class="coinlogo" src="https://cryptologos.cc/logos/usd-coin-usdc-logo.png?v=002" alt="Litecoin logo">
+                            </div>
                             <p>USD Coin (conocida por su símbolo USDC) es una stablecoin que está vinculada al dólar estadounidense en una base de 1:1. Todas las unidades de esta criptomoneda en circulación están respaldadas por U$S 1 que se mantienen en reserva, en una combinación de efectivo y bonos del Tesoro de Estados Unidos a corto plazo.</p>
                         </div>
                     </div>
@@ -176,9 +404,9 @@
                             <a href="#">X</a>
                             <h6>Binance Coin</h6>
                             <div class="coinlogo-container">
-                        		<label for="coinlogo">Logo:</label><img class="coinlogo" src="https://cryptologos.cc/logos/binance-coin-bnb-logo.png?v=002" alt="Litecoin logo">
-                        	</div>
-                            <p>Binance Coin es la criptomoneda oficial del criptoexchange o casa de cambio Binance, cuyo nombre es un acrónimo compuesto de las palabras “binary” y “finance”. 1​ La criptomoneda cuenta con 	el símbolo BNB y se basa en la cadena de bloques de Ethereum y, de forma similar a Ether.
+                                <label for="coinlogo">Logo:</label><img class="coinlogo" src="https://cryptologos.cc/logos/binance-coin-bnb-logo.png?v=002" alt="Litecoin logo">
+                            </div>
+                            <p>Binance Coin es la criptomoneda oficial del criptoexchange o casa de cambio Binance, cuyo nombre es un acrónimo compuesto de las palabras “binary” y “finance”. 1​ La criptomoneda cuenta con el símbolo BNB y se basa en la cadena de bloques de Ethereum y, de forma similar a Ether.
                                 La moneda nació básicamente para soportar transacciones dentro de la propia plataforma de Binance por lo que no se pueden adquirir en otras plataformas.</p>
                         </div>
                     </div>
@@ -191,17 +419,18 @@
                     <div id="modalLite" class="modal">
                         <div class="modal-contenido">
                             <a href="#">X</a>
-                        	<h6>LiteCoin</h6>
-                        	<div class="coinlogo-container">
-                        		<label for="coinlogo">Logo:</label><img class="coinlogo" src="https://cryptologos.cc/logos/litecoin-ltc-logo.png?v=010" alt="Litecoin logo">
-                        	</div>
+                            <h6>LiteCoin</h6>
+                            <div class="coinlogo-container">
+                                <label for="coinlogo">Logo:</label><img class="coinlogo" src="https://cryptologos.cc/logos/litecoin-ltc-logo.png?v=010" alt="Litecoin logo">
+                            </div>
                             <p>Litecoin (LTC) es una criptomoneda y proyecto de software de código abierto publicado bajo la licencia MIT inspirado y prácticamente idéntico en su aspecto técnico a Bitcoin (BTC). Su creación y transferencia se basa en un protocolo criptográfico no administrado por ninguna autoridad central y sustentado en el consenso de una red peer-to-peer.
-							Litecoin fue pensada para ser una alternativa a Bitcoin para transferencias de bajo valor, y cada litecoin es fraccionado en 100.000.000 unidades más pequeñas, definidas por ocho decimales.</p>
+                                Litecoin fue pensada para ser una alternativa a Bitcoin para transferencias de bajo valor, y cada litecoin es fraccionado en 100.000.000 unidades más pequeñas, definidas por ocho decimales.</p>
                         </div>
                     </div>
                 </a>
             </article>
         </section>
+         -->
     </main>
     <!-- START FIRST FOOTER -->
     <footer class="foot">
