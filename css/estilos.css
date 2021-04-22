@@ -73,38 +73,6 @@ body {
     max-width: 40px;
 }
 
-.nav__titulo {
-    margin: auto;
-    max-width: 20%;
-    margin-left: 10px;
-    margin-right: 0px;
-    font-size: 20px;
-}
-
-.nav__menu {
-    list-style-type: none;
-    margin: auto;
-    max-width: 40%;
-    margin-right: 0px;
-    padding: 6px;
-}
-
-.nav__menu__item {
-    display: inline;
-    padding-right: 4px;
-    border-right: 2px solid black;
-}
-
-.nav__menu__item:last-child {
-    border: none;
-}
-
-.nav__menu__item__link {
-    text-align: center;
-    text-decoration: underline;
-    color: blue;
-}
-
 /* FOOTER BAR Mods*/
 
 .foot {
