@@ -50,33 +50,57 @@
         </nav>
     </header>
     <main class="main">
-        <section>
-            <h1 class="main__title">Formulario de contacto</h1>
-            <!-- START FORM -->
-            <form class="form" method="GET" action="./contactanos.html">
-                <!-- Inicio de Obtencion de datos -->
-                <label for="name">Nombre y Apellido:</label><br>
-                <input classtype="text" id="name" name="name"><br><br>
-                <label for="email">E-mail:</label><br>
-                <input type="email" id="email" name="email"><br><br>
-                <label for="phone">Telefono:</label><br>
-                <input type="text" id="phone" name="phone"><br><br>
-                <label for="preference">Preferencia de contacto:</label><br>
-                <select name="preference">
-                    <option id="Email" value="email">E-mail</option>
-                    <option id="Email" value="telefono">Telefono</option>
-                </select><br><br>
-                <label for="registrado">Se encuentra registrado en nuestro newsletter?</label>
-                <input type="checkbox" id="registrado" name="registrado" value="Si">
-                <div class="yaRegistrado">Si</div><br><br>
-                <label for="consulta">Cuál es el motivo de su consulta?</label><br>
-                <textarea name="consulta"></textarea><br><br>
-                <!-- Fin de Obtencion de datos -->
-                <button type="reset">Eliminar info</button>
-                <button type="submit">Enviar</button><br><br>
-            </form>
-            <!-- START FORM -->
-        </section>
+        <div class="container">
+            <h1 class="text-white main__title">Formulario de contacto</h1>
+            <div class="d-flex justify-content-center">
+                <form class="bg-light p-2" method="GET" action="./contactanos.html">
+                    <div class="row mb-2 mb-1">
+                        <div class="col-auto mb-1">
+                            <label for="name" class="form-label">Nombre:</label>
+                            <input type="text" class="form-control" placeholder="First name" aria-label="First name">
+                        </div>
+                        <div class="col-auto mb-1">
+                            <label for="name" class="form-label">Apellido:</label>
+                            <input type="text" class="form-control" placeholder="Last name" aria-label="Last name">
+                        </div>
+                    </div>
+                    <div class="row mb-2">
+                        <div class="col mb-1">
+                            <label for="email" class="form-label">E-mail:</label>
+                            <input type="email" id="email" name="email" class="form-control">
+                        </div>
+                    </div>
+                    <div class="row mb-2">
+                        <div class="col mb-1">
+                            <label for="phone" class="form-label">Telefono:</label>
+                            <input type="text" id="phone" name="phone" class="form-control">
+                        </div>
+                    </div>
+                    <div class="row mb-2">
+                        <div class="col-6 mb-1">
+                            <label for="preference" class="form-label">Preferencia de contacto:</label>
+                            <select name="preference" class="form-select">
+                                <option id="Email" value="email">E-mail</option>
+                                <option id="Email" value="telefono">Telefono</option>
+                            </select>
+                        </div>
+                        <div class="col-6 mb-1">
+                            <label for="preference" class="form-label">Está registrado en newsletter?</label>
+                            <select name="preference" class="form-select">
+                                <option id="Email" value="email">Si</option>
+                                <option id="Email" value="telefono">No</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row mb-2">
+                        <div class="col mb-1">
+                            <label for="consulta" class="form-label">Cuál es el motivo de su consulta?</label>
+                            <textarea name="consulta" id="consulta" class="form-control" rows="5"></textarea>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
     </main>
     <footer class="bg-dark text-center text-white position-fixed vw-100 bottom-0 ">
         <div class="container p-1 pt-2 pb-0">
@@ -93,7 +117,7 @@
             </section>
         </div>
         <div class="text-center p-1 blackout">
-            <p class="remove-margin">Guido Rapisarda</p><a class="text-white" href="mailto:consultas@criptoinfo.com.ar">consultas@criptoinfo.com.ar</a><br>
+            <p class="remove-margin">Guido Rapisarda</p><a class="text-white" href="mailto:consultas@criptoinfo.com.ar">consultas@criptoinfo.com.ar</a>
             <p class="remove-margin">© 2021 Copyright</p>
         </div>
     </footer>
