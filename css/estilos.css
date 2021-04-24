@@ -73,71 +73,6 @@ body {
 }
 
 
-
-/* FOOTER BAR Mods*/
-
-.foot {
-    /*background-color: #f79719; */
-    background: rgb(247,151,25);
-    background: linear-gradient(164deg, rgba(247,151,25,1) 30%, rgba(52,196,226,1) 100%);
-    display: flex;
-    overflow: hidden;
-    justify-content: space-between;
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    line-height: 1.3;
-}
-
-.footerblockchain{
-    position: relative;
-}
-
-.foot__copyright {
-    margin-left: 20px;
-}
-
-.foot__container__form {
-    margin-right: 10px;
-}
-
-.foot__followus__link {
-    color: black;
-}
-
-/* Centrando y agrandando los titulos del container central y derecho*/
-.foot__followus__titulo, .foot__container__form__title {
-    font-size: 16px;
-    text-align: center;
-}
-
-/* Haciendo que el footer sea en columnas, para agregar varios footers en el mismo.*/
-.footInColumns {
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-/* haciendo que el footer con los derechos de autor, redes sociales y newsletter respete el formato original*/
-.foot__banner {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
-/* Moviendo hacia abajo los 3 boxes del footer*/
-.center__footer {
-    padding-top: 10px;
-}
-
-/* Editando el main de todas las páginas */
-.main {
-    display: flex;
-    flex-direction: column;
-    margin-top: 40px;
-    margin-bottom: 40px;
-}
-
 /* Modificando el titulo de la hero image */
 
 .heroPosition{
@@ -205,64 +140,6 @@ body {
 
 .yaRegistrado {
     display: inline;
-}
-
-.form label {
-    font-size: 12px;
-    margin: 0px 0px 10px 0;
-    line-height: 14px;
-}
-
-.form input[type="text"] {
-    width: 400px;
-}
-
-.form input[type="email"] {
-    width: 400px;
-}
-
-.form input:focus, textarea:focus {
-    border: 1px solid #ff5400;
-    background-color: rgba(255, 255, 255, 1);
-}
-
-.form select {
-    border: 0px solid #FFF;
-    color: #555;
-    margin: 0;
-    overflow: hidden;
-    padding-top: 5px;
-    padding-bottom: 5px;
-}
-
-.form button {
-    background: black;
-    display: inline-block;
-    padding: 5px 10px 6px;
-    color: white;
-    font-weight: bold;
-    line-height: 1;
-    border-radius: 5px;
-    box-shadow: 0 1px 3px #999;
-    text-shadow: 0 -1px 1px #222;
-    position: relative;
-    font-size: 14px;
-}
-
-.form button:hover {
-    background-color: #f79719;
-}
-
-.coinlogo-container{
-    display:flex;
-    padding: 0px 10px;
-}
-
-.coinlogo{
-    width: 20px;
-    height: 20px;
-    padding-top: 2px;
-    padding-left: 3px;
 }
 
 /* Edicion de las secciones con mas texto */
