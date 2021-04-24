@@ -72,6 +72,8 @@ body {
     max-width: 40px;
 }
 
+
+
 /* FOOTER BAR Mods*/
 
 .foot {
@@ -187,6 +189,10 @@ body {
     text-decoration: underline; 
 }
 
+.remove-margin{
+    margin:0;
+}
+
 /* Editando los estilos del Formulario de contacto */
 
 .form {
@@ -247,78 +253,6 @@ body {
     background-color: #f79719;
 }
 
-/* Grids en pagina de Monedas */
-.gridCards-container {
-  margin: 0 30%;
-  padding-top: 30px;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
-  gap: 60px 20px;
-  grid-template-areas:
-    "gridCards-element-dogecoin gridCards-element-bitcoin gridCards-element-ethereum"
-    "gridCards-element-cardano gridCards-element-tether gridCards-element-xrp"
-    "gridCards-element-usdcoin gridCards-element-binancecoin gridCards-element-litecoin";
-}
-.gridCards-element-dogecoin { grid-area: gridCards-element-dogecoin; }
-.gridCards-element-bitcoin { grid-area: gridCards-element-dogecoin; }
-.gridCards-element-ethereum { grid-area: gridCards-element-ethereum; }
-.gridCards-element-cardano { grid-area: gridCards-element-cardano; }
-.gridCards-element-tether { grid-area: gridCards-element-tether; }
-.gridCards-element-xrp { grid-area: gridCards-element-xrp; }
-.gridCards-element-usdcoin { grid-area: gridCards-element-usdcoin; }
-.gridCards-element-binancecoin { grid-area: gridCards-element-binancecoin; }
-.gridCards-element-litecoin { grid-area: gridCards-element-litecoin; }
-
-.boxContainer-currency{
-	border: solid 1px;
-	box-shadow: 0 8px 8px 0 rgba(0,0,0,0.2);
-	transition: 0.3s;
-
-}
-
-.boxContainer-currency:hover{
-	box-shadow: 0 8px 16px 0 #f79719;
-	text-decoration: underline;
-}
-
-/* hago que al hacer click en cualquier tarjeta, se abra el modal correspondiente. */
-#modalDoge:target, #modalBitcoin:target, 
-#modalEthereum:target, #modalCardano:target, 
-#modalTether:target, #modalXrp:target, 
-#modalUsdCoin:target, #modalBinance:target, 
-#modalLite:target{
-  opacity:1;
-  pointer-events:auto;
-  transition: all 1s;
-}
-
-/* Remuevo la apariencia de los links dentro de cada tarjeta. */
-a[href*="modal"]{
-  text-decoration: none;
-  color:black;
-}
-
-/* Hago que el boton de cerrar flote y se posicione a la derecha y afuera del contenedor. */
-.modal-contenido a{
-    text-decoration: none;
-    color:black;
-    float:right;
-    margin-top: -20px;
-    margin-right: -10px; 
-}
-
-.modal-contenido h6{
-    text-align: center;
-    font-size: 16px;
-    text-decoration: underline;
-    padding: 0px 10px;
-}
-
-.modal-contenido p{
-    padding: 0px 10px;
-}
-
 .coinlogo-container{
     display:flex;
     padding: 0px 10px;
@@ -351,4 +285,8 @@ a[href*="modal"]{
 
 .foot__cards section article{
     width: 110px;
+}
+
+.blackout{
+    background-color: rgba(0, 0, 0, 0.2);
 }
