@@ -1,169 +1,92 @@
+@import url("https://fonts.googleapis.com/css2?family=Mukta:wght@600&display=swap");
+@import url("https://pro.fontawesome.com/releases/v5.10.0/css/all.css");
+.contactanos {
+  background: url("../images/contactanos.jpg") no-repeat center center fixed;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
+
+.index {
+  background: url("../images/index.jpg") no-repeat center center fixed;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
+
+.comofuncionan {
+  background: url("../images/comofuncionan.jpg") no-repeat center center fixed;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
+
+.monedas {
+  background: url("../images/monedas.jpg") no-repeat center center fixed;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
+
+.blockchain {
+  background: url("../images/blockchain.jpg") no-repeat center center fixed;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
+
 /* CSS RESET */
-*{
-    margin: 0;
-    padding: 0;
-}
+* {
+  margin: 0;
+  padding: 0; }
 
 /* Seteando la letra para usar la de Google Fonts */
 body {
-    font-family: 'Mukta', sans-serif;
-    height: 100vh;
-}
-.navbar-toggler{
-    margin-right: 0;
-}
+  font-family: 'Mukta', sans-serif; }
 
-/* Seteando las imagenes de fondo por página */
-.contactanos, .index {
-    background-image: url("../images/background.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    position: relative;
-}
-
-.comofuncionan {
-    background-image: url("../images/funcionan.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    position: relative;
-}
-
-.monedas {
-    background-image: url("../images/monedas.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    position: relative;
-}
-
-.blockchain {
-    background-image: url("../images/domino.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    position: relative;
-}
-
-/* NAV BAR Mods*/
-
-.nav {
-    background: rgb(23,25,25);
-    background: linear-gradient(164deg, rgba(247,151,25,1) 30%, rgba(52,196,226,1) 100%);
-    display: flex;
-    overflow: hidden;
-    width: 100%;
-}
-
-.bg-orange{
-    background: rgba(247,151,25,1);
-}
 .navbar {
-    padding: 0;
-}
+  padding: 0; }
 
 .nav__logo {
-    padding-top: 9px;
-    margin-left: 20px;
-}
+  padding-top: 9px;
+  margin-left: 20px; }
 
 #logo {
-    max-width: 40px;
-}
+  max-width: 40px; }
 
+.heroSize {
+  font-size: 3em;
+  color: black;
+  text-align: left;
+  line-height: 1.1; }
 
-/* Modificando el titulo de la hero image */
+.heroPosition {
+  margin-left: 10%;
+  margin-top: 10%; }
 
-.heroPosition{
-    margin-left: 5vw;
-    margin-top: 10vh;
-    line-height: 1.1;
-}
+.btn-primary {
+  background-color: #f79719;
+  border-color: black;
+  color: black; }
 
-.heroSize{
-    font-size: 3em;
-    color: black;
-    text-align: left;
-}
+.btn-primary:hover {
+  background-color: black;
+  color: #f79719;
+  border-color: #f79719; }
 
-.main__hero {
-    max-width: 40%;
-    margin-left: 60px;
-    margin-top: 60px;
-    line-height: 1.1;
-}
+.bg-orange {
+  background: #f79719; }
 
-.main__hero__tituloHero {
-    font-size: 100px;
-    color: black;
-    text-align: left;
-    margin-top: -40px;
+.blackout {
+  background-color: rgba(0, 0, 0, 0.2); }
 
-}
+section article dl dt {
+  font-size: 1.8rem; }
 
-/* Modificando el boton del hero image*/
-
-.btn-primary{
-    background-color: #f79719;
-    border-color: black;
-    color:black;
-}
-
-.btn-primary:hover{
-    background-color: black;
-    color: #f79719;
-    border-color: #f79719;
-}
-
-/* Centrando el título y cambiando el tamaño e interlineado */
-.main__title {
-    text-align: center;
-    /*font-size: 40px;
-    line-height: 1.1;*/
-    text-decoration: underline; 
-}
-
-.remove-margin{
-    margin:0;
-}
-
-/* Editando los estilos del Formulario de contacto */
-
-.form {
-    background: #f1f1f1;
-    width: 470px;
-    margin: 0 auto;
-    padding-left: 50px;
-    padding-top: 20px;
-}
-
-.yaRegistrado {
-    display: inline;
-}
-
-/* Edicion de las secciones con mas texto */
-.main__section{
-    margin: 0 15%;
-}
-
-.main__section__article__titulo{
-    font-size: 30px;
-}
-
-.main__section__article__texto{
-    font-size: 18px;
-    padding-left: 45px;
-}
-
-.main__section__article__texto li{
-    margin-left: 45px;
-}
-
-.foot__cards section article{
-    width: 110px;
-}
-
-.blackout{
-    background-color: rgba(0, 0, 0, 0.2);
-}
+section article dl dd {
+  font-size: 1rem; }
